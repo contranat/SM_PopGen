@@ -21,5 +21,4 @@ ROH distribution
 
 ROH per individual
 
-dn/ds 
 
