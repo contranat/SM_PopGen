@@ -1,3 +1,5 @@
+data_path: "/home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS"
+
 chromosomes:
   - NC_058189.1
   - NC_058190.1
@@ -30,3 +32,5 @@ roh_parameters:
 
 final_output:
  - results/froh/merged_froh.tsv
+
+   

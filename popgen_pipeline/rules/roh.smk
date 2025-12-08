@@ -1,8 +1,10 @@
+import os
+
 CHROMS = config["chromosomes"]
 
 rule vcf_to_plink:
     input:
-        "data/FILTERED_CHR_VCFS/{chrom}.filtered.vcf.gz"
+        lambda wildcards: os.path.join(config["data_path"], f"{wildcards.chrom}.filtered.vcf.gz")
     output:
         bed="results/plink/{chrom}.bed",
         bim="results/plink/{chrom}.bim",
