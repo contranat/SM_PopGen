@@ -6,7 +6,7 @@
  ROH Pipeline (follows Lab 7, Full Genome)
 ##############################################
 
-configfile: "config.yaml"
+configfile: "config/config.yaml"
 
 CHROMS = config["chromosomes"]
 
