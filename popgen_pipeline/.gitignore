@@ -1,0 +1,16 @@
+# Do NOT track large data files
+data/**/*
+!data/README.md
+
+# Ignore VCF, BAM, FASTQ, etc.
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bam
+*.fastq
+*.fastq.gz
+*.zip
+
+# Ignore results
+results/
+
