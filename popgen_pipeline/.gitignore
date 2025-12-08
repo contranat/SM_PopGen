@@ -29,10 +29,13 @@ popgen_pipeline/data/**/*
 *.fastq.gz
 *.zip
 
-# Ignore Snakemake results
-popgen_pipeline/results/**
-!popgen_pipeline/results/README.md
-.snakemake/
-*.log
-*.err
-*.out
+# Ignore intermediate ROH files
+results/plink/**
+results/roh/**
+results/roh_per_chrom/**
+results/temp/**
+
+# Allow final processed outputs only
+!results/froh/merged_froh.tsv
+!results/plots/*.png
+

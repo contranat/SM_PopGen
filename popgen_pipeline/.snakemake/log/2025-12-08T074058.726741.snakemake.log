@@ -1,0 +1,521 @@
+Assuming unrestricted shared filesystem usage.
+host: nata
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+compute_froh       10
+merge_froh          1
+run_roh            10
+vcf_to_plink       10
+total              32
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 1 jobs...
+[Mon Dec  8 07:40:58 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058192.1.filtered.vcf.gz
+    output: results/plink/NC_058192.1.bed, results/plink/NC_058192.1.bim, results/plink/NC_058192.1.fam
+    jobid: 13
+    reason: Missing output files: results/plink/NC_058192.1.bed, results/plink/NC_058192.1.bim, results/plink/NC_058192.1.fam
+    wildcards: chrom=NC_058192.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058192.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058192.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:40:59 2025]
+Finished jobid: 13 (Rule: vcf_to_plink)
+1 of 32 steps (3%) done
+Execute 1 jobs...
+[Mon Dec  8 07:40:59 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058193.1.filtered.vcf.gz
+    output: results/plink/NC_058193.1.bed, results/plink/NC_058193.1.bim, results/plink/NC_058193.1.fam
+    jobid: 16
+    reason: Missing output files: results/plink/NC_058193.1.fam, results/plink/NC_058193.1.bim, results/plink/NC_058193.1.bed
+    wildcards: chrom=NC_058193.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058193.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058193.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:00 2025]
+Finished jobid: 16 (Rule: vcf_to_plink)
+2 of 32 steps (6%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:00 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058190.1.filtered.vcf.gz
+    output: results/plink/NC_058190.1.bed, results/plink/NC_058190.1.bim, results/plink/NC_058190.1.fam
+    jobid: 7
+    reason: Missing output files: results/plink/NC_058190.1.fam, results/plink/NC_058190.1.bim, results/plink/NC_058190.1.bed
+    wildcards: chrom=NC_058190.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058190.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058190.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:01 2025]
+Finished jobid: 7 (Rule: vcf_to_plink)
+3 of 32 steps (9%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:01 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058189.1.filtered.vcf.gz
+    output: results/plink/NC_058189.1.bed, results/plink/NC_058189.1.bim, results/plink/NC_058189.1.fam
+    jobid: 4
+    reason: Missing output files: results/plink/NC_058189.1.bed, results/plink/NC_058189.1.fam, results/plink/NC_058189.1.bim
+    wildcards: chrom=NC_058189.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058189.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058189.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:02 2025]
+Finished jobid: 4 (Rule: vcf_to_plink)
+4 of 32 steps (12%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:02 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058197.1.filtered.vcf.gz
+    output: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.bim, results/plink/NC_058197.1.fam
+    jobid: 28
+    reason: Missing output files: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.bim, results/plink/NC_058197.1.fam
+    wildcards: chrom=NC_058197.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058197.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058197.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:03 2025]
+Finished jobid: 28 (Rule: vcf_to_plink)
+5 of 32 steps (16%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:03 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058195.1.filtered.vcf.gz
+    output: results/plink/NC_058195.1.bed, results/plink/NC_058195.1.bim, results/plink/NC_058195.1.fam
+    jobid: 22
+    reason: Missing output files: results/plink/NC_058195.1.bim, results/plink/NC_058195.1.bed, results/plink/NC_058195.1.fam
+    wildcards: chrom=NC_058195.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058195.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058195.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:04 2025]
+Finished jobid: 22 (Rule: vcf_to_plink)
+6 of 32 steps (19%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:04 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058194.1.filtered.vcf.gz
+    output: results/plink/NC_058194.1.bed, results/plink/NC_058194.1.bim, results/plink/NC_058194.1.fam
+    jobid: 19
+    reason: Missing output files: results/plink/NC_058194.1.bim, results/plink/NC_058194.1.fam, results/plink/NC_058194.1.bed
+    wildcards: chrom=NC_058194.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058194.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058194.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:05 2025]
+Finished jobid: 19 (Rule: vcf_to_plink)
+7 of 32 steps (22%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:05 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058191.1.filtered.vcf.gz
+    output: results/plink/NC_058191.1.bed, results/plink/NC_058191.1.bim, results/plink/NC_058191.1.fam
+    jobid: 10
+    reason: Missing output files: results/plink/NC_058191.1.bim, results/plink/NC_058191.1.fam, results/plink/NC_058191.1.bed
+    wildcards: chrom=NC_058191.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058191.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058191.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:06 2025]
+Finished jobid: 10 (Rule: vcf_to_plink)
+8 of 32 steps (25%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:06 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058196.1.filtered.vcf.gz
+    output: results/plink/NC_058196.1.bed, results/plink/NC_058196.1.bim, results/plink/NC_058196.1.fam
+    jobid: 25
+    reason: Missing output files: results/plink/NC_058196.1.bed, results/plink/NC_058196.1.fam, results/plink/NC_058196.1.bim
+    wildcards: chrom=NC_058196.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058196.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058196.1             --allow-extra-chr             --double-id
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:06 2025]
+Finished jobid: 25 (Rule: vcf_to_plink)
+9 of 32 steps (28%) done
+Execute 4 jobs...
+[Mon Dec  8 07:41:06 2025]
+localrule run_roh:
+    input: results/plink/NC_058189.1.bed, results/plink/NC_058189.1.bim, results/plink/NC_058189.1.fam
+    output: results/roh/NC_058189.1.hom
+    jobid: 3
+    reason: Missing output files: results/roh/NC_058189.1.hom; Input files updated by another job: results/plink/NC_058189.1.bed, results/plink/NC_058189.1.fam, results/plink/NC_058189.1.bim
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058189.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058189.1
+        
+[Mon Dec  8 07:41:06 2025]
+localrule run_roh:
+    input: results/plink/NC_058190.1.bed, results/plink/NC_058190.1.bim, results/plink/NC_058190.1.fam
+    output: results/roh/NC_058190.1.hom
+    jobid: 6
+    reason: Missing output files: results/roh/NC_058190.1.hom; Input files updated by another job: results/plink/NC_058190.1.fam, results/plink/NC_058190.1.bim, results/plink/NC_058190.1.bed
+    wildcards: chrom=NC_058190.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058190.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058190.1
+        
+[Mon Dec  8 07:41:06 2025]
+localrule run_roh:
+    input: results/plink/NC_058192.1.bed, results/plink/NC_058192.1.bim, results/plink/NC_058192.1.fam
+    output: results/roh/NC_058192.1.hom
+    jobid: 12
+    reason: Missing output files: results/roh/NC_058192.1.hom; Input files updated by another job: results/plink/NC_058192.1.fam, results/plink/NC_058192.1.bim, results/plink/NC_058192.1.bed
+    wildcards: chrom=NC_058192.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058192.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058192.1
+        
+[Mon Dec  8 07:41:06 2025]
+localrule run_roh:
+    input: results/plink/NC_058193.1.bed, results/plink/NC_058193.1.bim, results/plink/NC_058193.1.fam
+    output: results/roh/NC_058193.1.hom
+    jobid: 15
+    reason: Missing output files: results/roh/NC_058193.1.hom; Input files updated by another job: results/plink/NC_058193.1.fam, results/plink/NC_058193.1.bed, results/plink/NC_058193.1.bim
+    wildcards: chrom=NC_058193.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058193.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058193.1
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 6 (Rule: run_roh)
+10 of 32 steps (31%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule run_roh:
+    input: results/plink/NC_058195.1.bed, results/plink/NC_058195.1.bim, results/plink/NC_058195.1.fam
+    output: results/roh/NC_058195.1.hom
+    jobid: 21
+    reason: Missing output files: results/roh/NC_058195.1.hom; Input files updated by another job: results/plink/NC_058195.1.bim, results/plink/NC_058195.1.bed, results/plink/NC_058195.1.fam
+    wildcards: chrom=NC_058195.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058195.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058195.1
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 3 (Rule: run_roh)
+11 of 32 steps (34%) done
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 15 (Rule: run_roh)
+12 of 32 steps (38%) done
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 12 (Rule: run_roh)
+13 of 32 steps (41%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule run_roh:
+    input: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.bim, results/plink/NC_058197.1.fam
+    output: results/roh/NC_058197.1.hom
+    jobid: 27
+    reason: Missing output files: results/roh/NC_058197.1.hom; Input files updated by another job: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.bim, results/plink/NC_058197.1.fam
+    wildcards: chrom=NC_058197.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058197.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058197.1
+        
+[Mon Dec  8 07:41:07 2025]
+localrule run_roh:
+    input: results/plink/NC_058191.1.bed, results/plink/NC_058191.1.bim, results/plink/NC_058191.1.fam
+    output: results/roh/NC_058191.1.hom
+    jobid: 9
+    reason: Missing output files: results/roh/NC_058191.1.hom; Input files updated by another job: results/plink/NC_058191.1.bim, results/plink/NC_058191.1.fam, results/plink/NC_058191.1.bed
+    wildcards: chrom=NC_058191.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058191.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058191.1
+        
+[Mon Dec  8 07:41:07 2025]
+localrule run_roh:
+    input: results/plink/NC_058194.1.bed, results/plink/NC_058194.1.bim, results/plink/NC_058194.1.fam
+    output: results/roh/NC_058194.1.hom
+    jobid: 18
+    reason: Missing output files: results/roh/NC_058194.1.hom; Input files updated by another job: results/plink/NC_058194.1.bim, results/plink/NC_058194.1.fam, results/plink/NC_058194.1.bed
+    wildcards: chrom=NC_058194.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058194.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058194.1
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 18 (Rule: run_roh)
+14 of 32 steps (44%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule run_roh:
+    input: results/plink/NC_058196.1.bed, results/plink/NC_058196.1.bim, results/plink/NC_058196.1.fam
+    output: results/roh/NC_058196.1.hom
+    jobid: 24
+    reason: Missing output files: results/roh/NC_058196.1.hom; Input files updated by another job: results/plink/NC_058196.1.bed, results/plink/NC_058196.1.fam, results/plink/NC_058196.1.bim
+    wildcards: chrom=NC_058196.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058196.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058196.1
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 9 (Rule: run_roh)
+15 of 32 steps (47%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058189.1.hom
+    output: results/froh/NC_058189.1.froh.tsv
+    jobid: 2
+    reason: Missing output files: results/froh/NC_058189.1.froh.tsv; Input files updated by another job: results/roh/NC_058189.1.hom
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058189.1 results/roh/NC_058189.1.hom 71177040             > results/froh/NC_058189.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 21 (Rule: run_roh)
+16 of 32 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058191.1.hom
+    output: results/froh/NC_058191.1.froh.tsv
+    jobid: 8
+    reason: Missing output files: results/froh/NC_058191.1.froh.tsv; Input files updated by another job: results/roh/NC_058191.1.hom
+    wildcards: chrom=NC_058191.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058191.1 results/roh/NC_058191.1.hom 43944265             > results/froh/NC_058191.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 2 (Rule: compute_froh)
+17 of 32 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058193.1.hom
+    output: results/froh/NC_058193.1.froh.tsv
+    jobid: 14
+    reason: Missing output files: results/froh/NC_058193.1.froh.tsv; Input files updated by another job: results/roh/NC_058193.1.hom
+    wildcards: chrom=NC_058193.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058193.1 results/roh/NC_058193.1.hom 40263884             > results/froh/NC_058193.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 27 (Rule: run_roh)
+18 of 32 steps (56%) done
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 8 (Rule: compute_froh)
+19 of 32 steps (59%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058195.1.hom
+    output: results/froh/NC_058195.1.froh.tsv
+    jobid: 20
+    reason: Missing output files: results/froh/NC_058195.1.froh.tsv; Input files updated by another job: results/roh/NC_058195.1.hom
+    wildcards: chrom=NC_058195.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058195.1 results/roh/NC_058195.1.hom 34009066             > results/froh/NC_058195.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058197.1.hom
+    output: results/froh/NC_058197.1.froh.tsv
+    jobid: 26
+    reason: Missing output files: results/froh/NC_058197.1.froh.tsv; Input files updated by another job: results/roh/NC_058197.1.hom
+    wildcards: chrom=NC_058197.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058197.1 results/roh/NC_058197.1.hom 20753350             > results/froh/NC_058197.1.froh.tsv
+        
+Select jobs to execute...
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 14 (Rule: compute_froh)
+20 of 32 steps (62%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058194.1.hom
+    output: results/froh/NC_058194.1.froh.tsv
+    jobid: 17
+    reason: Missing output files: results/froh/NC_058194.1.froh.tsv; Input files updated by another job: results/roh/NC_058194.1.hom
+    wildcards: chrom=NC_058194.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058194.1 results/roh/NC_058194.1.hom 34462492             > results/froh/NC_058194.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 20 (Rule: compute_froh)
+21 of 32 steps (66%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058190.1.hom
+    output: results/froh/NC_058190.1.froh.tsv
+    jobid: 5
+    reason: Missing output files: results/froh/NC_058190.1.froh.tsv; Input files updated by another job: results/roh/NC_058190.1.hom
+    wildcards: chrom=NC_058190.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058190.1 results/roh/NC_058190.1.hom 54650663             > results/froh/NC_058190.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 26 (Rule: compute_froh)
+22 of 32 steps (69%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058192.1.hom
+    output: results/froh/NC_058192.1.froh.tsv
+    jobid: 11
+    reason: Missing output files: results/froh/NC_058192.1.froh.tsv; Input files updated by another job: results/roh/NC_058192.1.hom
+    wildcards: chrom=NC_058192.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058192.1 results/roh/NC_058192.1.hom 41442133             > results/froh/NC_058192.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 17 (Rule: compute_froh)
+23 of 32 steps (72%) done
+Select jobs to execute...
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 5 (Rule: compute_froh)
+24 of 32 steps (75%) done
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 11 (Rule: compute_froh)
+25 of 32 steps (78%) done
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 24 (Rule: run_roh)
+26 of 32 steps (81%) done
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058198.1.filtered.vcf.gz
+    output: results/plink/NC_058198.1.bed, results/plink/NC_058198.1.bim, results/plink/NC_058198.1.fam
+    jobid: 31
+    reason: Missing output files: results/plink/NC_058198.1.bed, results/plink/NC_058198.1.fam, results/plink/NC_058198.1.bim
+    wildcards: chrom=NC_058198.1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --vcf /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058198.1.filtered.vcf.gz             --make-bed             --out results/plink/NC_058198.1             --allow-extra-chr             --double-id
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 31 (Rule: vcf_to_plink)
+27 of 32 steps (84%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058196.1.hom
+    output: results/froh/NC_058196.1.froh.tsv
+    jobid: 23
+    reason: Missing output files: results/froh/NC_058196.1.froh.tsv; Input files updated by another job: results/roh/NC_058196.1.hom
+    wildcards: chrom=NC_058196.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058196.1 results/roh/NC_058196.1.hom 33488718             > results/froh/NC_058196.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+localrule run_roh:
+    input: results/plink/NC_058198.1.bed, results/plink/NC_058198.1.bim, results/plink/NC_058198.1.fam
+    output: results/roh/NC_058198.1.hom
+    jobid: 30
+    reason: Missing output files: results/roh/NC_058198.1.hom; Input files updated by another job: results/plink/NC_058198.1.bed, results/plink/NC_058198.1.fam, results/plink/NC_058198.1.bim
+    wildcards: chrom=NC_058198.1
+    resources: tmpdir=/tmp
+Shell command: 
+        plink             --bfile results/plink/NC_058198.1             --homozyg             --homozyg-kb 1000             --homozyg-window-snp 500             --homozyg-window-het 2             --homozyg-window-missing 2             --allow-extra-chr             --out results/roh/NC_058198.1
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 23 (Rule: compute_froh)
+28 of 32 steps (88%) done
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 30 (Rule: run_roh)
+29 of 32 steps (91%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule compute_froh:
+    input: results/roh/NC_058198.1.hom
+    output: results/froh/NC_058198.1.froh.tsv
+    jobid: 29
+    reason: Missing output files: results/froh/NC_058198.1.froh.tsv; Input files updated by another job: results/roh/NC_058198.1.hom
+    wildcards: chrom=NC_058198.1
+    resources: tmpdir=/tmp
+Shell command: 
+        bash scripts/compute_froh.sh NC_058198.1 results/roh/NC_058198.1.hom 24000787             > results/froh/NC_058198.1.froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 29 (Rule: compute_froh)
+30 of 32 steps (94%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule merge_froh:
+    input: results/froh/NC_058189.1.froh.tsv, results/froh/NC_058190.1.froh.tsv, results/froh/NC_058191.1.froh.tsv, results/froh/NC_058192.1.froh.tsv, results/froh/NC_058193.1.froh.tsv, results/froh/NC_058194.1.froh.tsv, results/froh/NC_058195.1.froh.tsv, results/froh/NC_058196.1.froh.tsv, results/froh/NC_058197.1.froh.tsv, results/froh/NC_058198.1.froh.tsv
+    output: results/froh/merged_froh.tsv
+    jobid: 1
+    reason: Missing output files: results/froh/merged_froh.tsv; Input files updated by another job: results/froh/NC_058195.1.froh.tsv, results/froh/NC_058196.1.froh.tsv, results/froh/NC_058194.1.froh.tsv, results/froh/NC_058198.1.froh.tsv, results/froh/NC_058189.1.froh.tsv, results/froh/NC_058191.1.froh.tsv, results/froh/NC_058192.1.froh.tsv, results/froh/NC_058190.1.froh.tsv, results/froh/NC_058197.1.froh.tsv, results/froh/NC_058193.1.froh.tsv
+    resources: tmpdir=/tmp
+Shell command: 
+        cat results/froh/NC_058189.1.froh.tsv results/froh/NC_058190.1.froh.tsv results/froh/NC_058191.1.froh.tsv results/froh/NC_058192.1.froh.tsv results/froh/NC_058193.1.froh.tsv results/froh/NC_058194.1.froh.tsv results/froh/NC_058195.1.froh.tsv results/froh/NC_058196.1.froh.tsv results/froh/NC_058197.1.froh.tsv results/froh/NC_058198.1.froh.tsv > results/froh/merged_froh.tsv
+        
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 1 (Rule: merge_froh)
+31 of 32 steps (97%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Dec  8 07:41:07 2025]
+localrule all:
+    input: results/froh/merged_froh.tsv
+    jobid: 0
+    reason: Input files updated by another job: results/froh/merged_froh.tsv
+    resources: tmpdir=/tmp
+Shell command: None
+[Mon Dec  8 07:41:07 2025]
+Finished jobid: 0 (Rule: all)
+32 of 32 steps (100%) done
+Complete log(s): /home/exouser/Desktop/SM_PopGen/popgen_pipeline/.snakemake/log/2025-12-08T074058.726741.snakemake.log
