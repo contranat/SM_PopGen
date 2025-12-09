@@ -1,0 +1,316 @@
+Assuming unrestricted shared filesystem usage.
+host: nata
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+compute_froh                   10
+merge_froh                      1
+roh_manhattan_genomewide        1
+roh_manhattan_single            1
+run_roh                        10
+total                          24
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 4 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058192.1.bed, results/plink/NC_058192.1.bim, results/plink/NC_058192.1.fam
+    output: results/roh/NC_058192.1.hom
+    jobid: 12
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058192.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058189.1.bed, results/plink/NC_058189.1.bim, results/plink/NC_058189.1.fam
+    output: results/roh/NC_058189.1.hom
+    jobid: 3
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058190.1.bed, results/plink/NC_058190.1.bim, results/plink/NC_058190.1.fam
+    output: results/roh/NC_058190.1.hom
+    jobid: 6
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058190.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058193.1.bed, results/plink/NC_058193.1.bim, results/plink/NC_058193.1.fam
+    output: results/roh/NC_058193.1.hom
+    jobid: 15
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058193.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 3 (Rule: run_roh)
+1 of 24 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058195.1.bed, results/plink/NC_058195.1.bim, results/plink/NC_058195.1.fam
+    output: results/roh/NC_058195.1.hom
+    jobid: 21
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058195.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 6 (Rule: run_roh)
+2 of 24 steps (8%) done
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 15 (Rule: run_roh)
+3 of 24 steps (12%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058194.1.bed, results/plink/NC_058194.1.bim, results/plink/NC_058194.1.fam
+    output: results/roh/NC_058194.1.hom
+    jobid: 18
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058194.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.bim, results/plink/NC_058197.1.fam
+    output: results/roh/NC_058197.1.hom
+    jobid: 27
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058197.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 12 (Rule: run_roh)
+4 of 24 steps (17%) done
+Execute 1 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058191.1.bed, results/plink/NC_058191.1.bim, results/plink/NC_058191.1.fam
+    output: results/roh/NC_058191.1.hom
+    jobid: 9
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058191.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 18 (Rule: run_roh)
+5 of 24 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058196.1.bed, results/plink/NC_058196.1.bim, results/plink/NC_058196.1.fam
+    output: results/roh/NC_058196.1.hom
+    jobid: 24
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058196.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 27 (Rule: run_roh)
+6 of 24 steps (25%) done
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 9 (Rule: run_roh)
+7 of 24 steps (29%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule compute_froh:
+    input: results/roh/NC_058189.1.hom
+    output: results/froh/NC_058189.1.froh.tsv
+    jobid: 2
+    reason: Input files updated by another job: results/roh/NC_058189.1.hom
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+localrule run_roh:
+    input: results/plink/NC_058198.1.bed, results/plink/NC_058198.1.bim, results/plink/NC_058198.1.fam
+    output: results/roh/NC_058198.1.hom
+    jobid: 30
+    reason: Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 1000 now: 1,50 
+    wildcards: chrom=NC_058198.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 21 (Rule: run_roh)
+8 of 24 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule roh_manhattan_single:
+    input: results/roh/NC_058189.1.hom
+    output: results/plots/roh_NC_058189.1.png
+    jobid: 33
+    reason: Input files updated by another job: results/roh/NC_058189.1.hom
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 04:02:31 2025]
+Finished jobid: 2 (Rule: compute_froh)
+9 of 24 steps (38%) done
+Execute 1 jobs...
+[Tue Dec  9 04:02:31 2025]
+localrule roh_manhattan_genomewide:
+    input: results/roh
+    output: results/plots/roh_manhattan_genomewide.png
+    jobid: 32
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 30 (Rule: run_roh)
+10 of 24 steps (42%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058193.1.hom
+    output: results/froh/NC_058193.1.froh.tsv
+    jobid: 14
+    reason: Input files updated by another job: results/roh/NC_058193.1.hom
+    wildcards: chrom=NC_058193.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 14 (Rule: compute_froh)
+11 of 24 steps (46%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058192.1.hom
+    output: results/froh/NC_058192.1.froh.tsv
+    jobid: 11
+    reason: Input files updated by another job: results/roh/NC_058192.1.hom
+    wildcards: chrom=NC_058192.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 11 (Rule: compute_froh)
+12 of 24 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058191.1.hom
+    output: results/froh/NC_058191.1.froh.tsv
+    jobid: 8
+    reason: Input files updated by another job: results/roh/NC_058191.1.hom
+    wildcards: chrom=NC_058191.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 24 (Rule: run_roh)
+13 of 24 steps (54%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058196.1.hom
+    output: results/froh/NC_058196.1.froh.tsv
+    jobid: 23
+    reason: Input files updated by another job: results/roh/NC_058196.1.hom
+    wildcards: chrom=NC_058196.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 8 (Rule: compute_froh)
+14 of 24 steps (58%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058195.1.hom
+    output: results/froh/NC_058195.1.froh.tsv
+    jobid: 20
+    reason: Input files updated by another job: results/roh/NC_058195.1.hom
+    wildcards: chrom=NC_058195.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 23 (Rule: compute_froh)
+15 of 24 steps (62%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058190.1.hom
+    output: results/froh/NC_058190.1.froh.tsv
+    jobid: 5
+    reason: Input files updated by another job: results/roh/NC_058190.1.hom
+    wildcards: chrom=NC_058190.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 20 (Rule: compute_froh)
+16 of 24 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058194.1.hom
+    output: results/froh/NC_058194.1.froh.tsv
+    jobid: 17
+    reason: Input files updated by another job: results/roh/NC_058194.1.hom
+    wildcards: chrom=NC_058194.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 5 (Rule: compute_froh)
+17 of 24 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058197.1.hom
+    output: results/froh/NC_058197.1.froh.tsv
+    jobid: 26
+    reason: Input files updated by another job: results/roh/NC_058197.1.hom
+    wildcards: chrom=NC_058197.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 17 (Rule: compute_froh)
+18 of 24 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule compute_froh:
+    input: results/roh/NC_058198.1.hom
+    output: results/froh/NC_058198.1.froh.tsv
+    jobid: 29
+    reason: Input files updated by another job: results/roh/NC_058198.1.hom
+    wildcards: chrom=NC_058198.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 26 (Rule: compute_froh)
+19 of 24 steps (79%) done
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 29 (Rule: compute_froh)
+20 of 24 steps (83%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:32 2025]
+localrule merge_froh:
+    input: results/froh/NC_058189.1.froh.tsv, results/froh/NC_058190.1.froh.tsv, results/froh/NC_058191.1.froh.tsv, results/froh/NC_058192.1.froh.tsv, results/froh/NC_058193.1.froh.tsv, results/froh/NC_058194.1.froh.tsv, results/froh/NC_058195.1.froh.tsv, results/froh/NC_058196.1.froh.tsv, results/froh/NC_058197.1.froh.tsv, results/froh/NC_058198.1.froh.tsv
+    output: results/froh/merged_froh.tsv
+    jobid: 1
+    reason: Input files updated by another job: results/froh/NC_058191.1.froh.tsv, results/froh/NC_058189.1.froh.tsv, results/froh/NC_058198.1.froh.tsv, results/froh/NC_058197.1.froh.tsv, results/froh/NC_058195.1.froh.tsv, results/froh/NC_058192.1.froh.tsv, results/froh/NC_058193.1.froh.tsv, results/froh/NC_058194.1.froh.tsv, results/froh/NC_058190.1.froh.tsv, results/froh/NC_058196.1.froh.tsv
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:32 2025]
+Finished jobid: 1 (Rule: merge_froh)
+21 of 24 steps (88%) done
+[Tue Dec  9 04:02:33 2025]
+Finished jobid: 33 (Rule: roh_manhattan_single)
+22 of 24 steps (92%) done
+[Tue Dec  9 04:02:33 2025]
+Finished jobid: 32 (Rule: roh_manhattan_genomewide)
+23 of 24 steps (96%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 04:02:33 2025]
+localrule all:
+    input: results/froh/merged_froh.tsv, results/plots/roh_manhattan_genomewide.png, results/plots/roh_NC_058189.1.png
+    jobid: 0
+    reason: Input files updated by another job: results/froh/merged_froh.tsv, results/plots/roh_NC_058189.1.png, results/plots/roh_manhattan_genomewide.png
+    resources: tmpdir=/tmp
+[Tue Dec  9 04:02:33 2025]
+Finished jobid: 0 (Rule: all)
+24 of 24 steps (100%) done
+Complete log(s): /home/exouser/Desktop/SM_PopGen/popgen_pipeline/.snakemake/log/2025-12-09T040231.374963.snakemake.log

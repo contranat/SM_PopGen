@@ -1,0 +1,439 @@
+Assuming unrestricted shared filesystem usage.
+host: nata
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+compute_froh                   10
+merge_froh                      1
+roh_manhattan_chr              10
+roh_manhattan_genomewide        1
+run_roh                        10
+vcf_to_plink                   10
+total                          43
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 1 jobs...
+[Tue Dec  9 02:01:47 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058192.1.filtered.vcf.gz
+    output: results/plink/NC_058192.1.bed, results/plink/NC_058192.1.bim, results/plink/NC_058192.1.fam
+    jobid: 13
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058192.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:48 2025]
+Finished jobid: 13 (Rule: vcf_to_plink)
+1 of 43 steps (2%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:48 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058193.1.filtered.vcf.gz
+    output: results/plink/NC_058193.1.bed, results/plink/NC_058193.1.bim, results/plink/NC_058193.1.fam
+    jobid: 16
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058193.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:49 2025]
+Finished jobid: 16 (Rule: vcf_to_plink)
+2 of 43 steps (5%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:49 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058190.1.filtered.vcf.gz
+    output: results/plink/NC_058190.1.bed, results/plink/NC_058190.1.bim, results/plink/NC_058190.1.fam
+    jobid: 7
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058190.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:50 2025]
+Finished jobid: 7 (Rule: vcf_to_plink)
+3 of 43 steps (7%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:50 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058189.1.filtered.vcf.gz
+    output: results/plink/NC_058189.1.bed, results/plink/NC_058189.1.bim, results/plink/NC_058189.1.fam
+    jobid: 4
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058189.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:51 2025]
+Finished jobid: 4 (Rule: vcf_to_plink)
+4 of 43 steps (9%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:51 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058197.1.filtered.vcf.gz
+    output: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.bim, results/plink/NC_058197.1.fam
+    jobid: 28
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058197.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:52 2025]
+Finished jobid: 28 (Rule: vcf_to_plink)
+5 of 43 steps (12%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:52 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058195.1.filtered.vcf.gz
+    output: results/plink/NC_058195.1.bed, results/plink/NC_058195.1.bim, results/plink/NC_058195.1.fam
+    jobid: 22
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058195.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:53 2025]
+Finished jobid: 22 (Rule: vcf_to_plink)
+6 of 43 steps (14%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:53 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058194.1.filtered.vcf.gz
+    output: results/plink/NC_058194.1.bed, results/plink/NC_058194.1.bim, results/plink/NC_058194.1.fam
+    jobid: 19
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058194.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:53 2025]
+Finished jobid: 19 (Rule: vcf_to_plink)
+7 of 43 steps (16%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:53 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058191.1.filtered.vcf.gz
+    output: results/plink/NC_058191.1.bed, results/plink/NC_058191.1.bim, results/plink/NC_058191.1.fam
+    jobid: 10
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058191.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:54 2025]
+Finished jobid: 10 (Rule: vcf_to_plink)
+8 of 43 steps (19%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:54 2025]
+localrule vcf_to_plink:
+    input: /home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS/NC_058196.1.filtered.vcf.gz
+    output: results/plink/NC_058196.1.bed, results/plink/NC_058196.1.bim, results/plink/NC_058196.1.fam
+    jobid: 25
+    reason: Code has changed since last execution
+    wildcards: chrom=NC_058196.1
+    threads: 4
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 25 (Rule: vcf_to_plink)
+9 of 43 steps (21%) done
+Execute 4 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058189.1.bed, results/plink/NC_058189.1.bim, results/plink/NC_058189.1.fam
+    output: results/roh/NC_058189.1.hom
+    jobid: 3
+    reason: Input files updated by another job: results/plink/NC_058189.1.fam, results/plink/NC_058189.1.bim, results/plink/NC_058189.1.bed
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058190.1.bed, results/plink/NC_058190.1.bim, results/plink/NC_058190.1.fam
+    output: results/roh/NC_058190.1.hom
+    jobid: 6
+    reason: Input files updated by another job: results/plink/NC_058190.1.fam, results/plink/NC_058190.1.bed, results/plink/NC_058190.1.bim
+    wildcards: chrom=NC_058190.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058192.1.bed, results/plink/NC_058192.1.bim, results/plink/NC_058192.1.fam
+    output: results/roh/NC_058192.1.hom
+    jobid: 12
+    reason: Input files updated by another job: results/plink/NC_058192.1.bim, results/plink/NC_058192.1.fam, results/plink/NC_058192.1.bed
+    wildcards: chrom=NC_058192.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058193.1.bed, results/plink/NC_058193.1.bim, results/plink/NC_058193.1.fam
+    output: results/roh/NC_058193.1.hom
+    jobid: 15
+    reason: Input files updated by another job: results/plink/NC_058193.1.bim, results/plink/NC_058193.1.fam, results/plink/NC_058193.1.bed
+    wildcards: chrom=NC_058193.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 3 (Rule: run_roh)
+10 of 43 steps (23%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058195.1.bed, results/plink/NC_058195.1.bim, results/plink/NC_058195.1.fam
+    output: results/roh/NC_058195.1.hom
+    jobid: 21
+    reason: Input files updated by another job: results/plink/NC_058195.1.fam, results/plink/NC_058195.1.bed, results/plink/NC_058195.1.bim
+    wildcards: chrom=NC_058195.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 6 (Rule: run_roh)
+11 of 43 steps (26%) done
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 12 (Rule: run_roh)
+12 of 43 steps (28%) done
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 15 (Rule: run_roh)
+13 of 43 steps (30%) done
+Select jobs to execute...
+Execute 3 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.bim, results/plink/NC_058197.1.fam
+    output: results/roh/NC_058197.1.hom
+    jobid: 27
+    reason: Input files updated by another job: results/plink/NC_058197.1.bed, results/plink/NC_058197.1.fam, results/plink/NC_058197.1.bim
+    wildcards: chrom=NC_058197.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058191.1.bed, results/plink/NC_058191.1.bim, results/plink/NC_058191.1.fam
+    output: results/roh/NC_058191.1.hom
+    jobid: 9
+    reason: Input files updated by another job: results/plink/NC_058191.1.bed, results/plink/NC_058191.1.fam, results/plink/NC_058191.1.bim
+    wildcards: chrom=NC_058191.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058194.1.bed, results/plink/NC_058194.1.bim, results/plink/NC_058194.1.fam
+    output: results/roh/NC_058194.1.hom
+    jobid: 18
+    reason: Input files updated by another job: results/plink/NC_058194.1.bed, results/plink/NC_058194.1.fam, results/plink/NC_058194.1.bim
+    wildcards: chrom=NC_058194.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 9 (Rule: run_roh)
+14 of 43 steps (33%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule run_roh:
+    input: results/plink/NC_058196.1.bed, results/plink/NC_058196.1.bim, results/plink/NC_058196.1.fam
+    output: results/roh/NC_058196.1.hom
+    jobid: 24
+    reason: Input files updated by another job: results/plink/NC_058196.1.fam, results/plink/NC_058196.1.bim, results/plink/NC_058196.1.bed
+    wildcards: chrom=NC_058196.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 21 (Rule: run_roh)
+15 of 43 steps (35%) done
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 18 (Rule: run_roh)
+16 of 43 steps (37%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule compute_froh:
+    input: results/roh/NC_058189.1.hom
+    output: results/froh/NC_058189.1.froh.tsv
+    jobid: 2
+    reason: Input files updated by another job: results/roh/NC_058189.1.hom
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+localrule roh_manhattan_chr:
+    input: results/roh/NC_058189.1.hom
+    output: results/plots/roh_NC_058189.1.png
+    jobid: 33
+    reason: Missing output files: results/plots/roh_NC_058189.1.png; Input files updated by another job: results/roh/NC_058189.1.hom
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 27 (Rule: run_roh)
+17 of 43 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule roh_manhattan_chr:
+    input: results/roh/NC_058197.1.hom
+    output: results/plots/roh_NC_058197.1.png
+    jobid: 41
+    reason: Missing output files: results/plots/roh_NC_058197.1.png; Input files updated by another job: results/roh/NC_058197.1.hom
+    wildcards: chrom=NC_058197.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 2 (Rule: compute_froh)
+18 of 43 steps (42%) done
+Execute 1 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule compute_froh:
+    input: results/roh/NC_058191.1.hom
+    output: results/froh/NC_058191.1.froh.tsv
+    jobid: 8
+    reason: Input files updated by another job: results/roh/NC_058191.1.hom
+    wildcards: chrom=NC_058191.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 8 (Rule: compute_froh)
+19 of 43 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule roh_manhattan_chr:
+    input: results/roh/NC_058190.1.hom
+    output: results/plots/roh_NC_058190.1.png
+    jobid: 34
+    reason: Missing output files: results/plots/roh_NC_058190.1.png; Input files updated by another job: results/roh/NC_058190.1.hom
+    wildcards: chrom=NC_058190.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 24 (Rule: run_roh)
+20 of 43 steps (47%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule compute_froh:
+    input: results/roh/NC_058193.1.hom
+    output: results/froh/NC_058193.1.froh.tsv
+    jobid: 14
+    reason: Input files updated by another job: results/roh/NC_058193.1.hom
+    wildcards: chrom=NC_058193.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 02:01:55 2025]
+Finished jobid: 14 (Rule: compute_froh)
+21 of 43 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 02:01:55 2025]
+localrule roh_manhattan_chr:
+    input: results/roh/NC_058192.1.hom
+    output: results/plots/roh_NC_058192.1.png
+    jobid: 36
+    reason: Missing output files: results/plots/roh_NC_058192.1.png; Input files updated by another job: results/roh/NC_058192.1.hom
+    wildcards: chrom=NC_058192.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/home/exouser/Desktop/SM_PopGen/popgen_pipeline/Snakefile", line 124:
+Command 'set -euo pipefail;  
+        Rscript scripts/roh_manhattan.R results/roh/NC_058192.1.hom results/plots/roh_NC_058192.1.png' returned non-zero exit status 1.
+RuleException:
+CalledProcessError in file "/home/exouser/Desktop/SM_PopGen/popgen_pipeline/Snakefile", line 124:
+Command 'set -euo pipefail;  
+        Rscript scripts/roh_manhattan.R results/roh/NC_058189.1.hom results/plots/roh_NC_058189.1.png' returned non-zero exit status 1.
+RuleException:
+CalledProcessError in file "/home/exouser/Desktop/SM_PopGen/popgen_pipeline/Snakefile", line 124:
+Command 'set -euo pipefail;  
+        Rscript scripts/roh_manhattan.R results/roh/NC_058190.1.hom results/plots/roh_NC_058190.1.png' returned non-zero exit status 1.
+RuleException:
+CalledProcessError in file "/home/exouser/Desktop/SM_PopGen/popgen_pipeline/Snakefile", line 124:
+Command 'set -euo pipefail;  
+        Rscript scripts/roh_manhattan.R results/roh/NC_058197.1.hom results/plots/roh_NC_058197.1.png' returned non-zero exit status 1.
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 36
+    input: results/roh/NC_058192.1.hom
+    output: results/plots/roh_NC_058192.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058192.1.hom results/plots/roh_NC_058192.1.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 33
+    input: results/roh/NC_058189.1.hom
+    output: results/plots/roh_NC_058189.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058189.1.hom results/plots/roh_NC_058189.1.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 34
+    input: results/roh/NC_058190.1.hom
+    output: results/plots/roh_NC_058190.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058190.1.hom results/plots/roh_NC_058190.1.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 41
+    input: results/roh/NC_058197.1.hom
+    output: results/plots/roh_NC_058197.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058197.1.hom results/plots/roh_NC_058197.1.png
+        
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 33
+    input: results/roh/NC_058189.1.hom
+    output: results/plots/roh_NC_058189.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058189.1.hom results/plots/roh_NC_058189.1.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 34
+    input: results/roh/NC_058190.1.hom
+    output: results/plots/roh_NC_058190.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058190.1.hom results/plots/roh_NC_058190.1.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 36
+    input: results/roh/NC_058192.1.hom
+    output: results/plots/roh_NC_058192.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058192.1.hom results/plots/roh_NC_058192.1.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 02:01:57 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 41
+    input: results/roh/NC_058197.1.hom
+    output: results/plots/roh_NC_058197.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058197.1.hom results/plots/roh_NC_058197.1.png
+        
+        (command exited with non-zero exit code)
+Complete log(s): /home/exouser/Desktop/SM_PopGen/popgen_pipeline/.snakemake/log/2025-12-09T020147.115181.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

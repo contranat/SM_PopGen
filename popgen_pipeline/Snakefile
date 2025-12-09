@@ -1,104 +1,22 @@
 import os
 
 ##############################################
-# Snakefile 
-#############################################
-# ROH Pipeline (follows Lab 7, Full Genome)
+# Snakefile ? main entry point
 ##############################################
 
 configfile: "config/config.yaml"
 
-CHROMS = config["chromosomes"]
+include: "rules/roh.smk"
 
-# ------------------------------
-# RULE ALL (final target files)
-# ------------------------------
+CHROMS = config["chromosomes"]
+PLOT_CHR = config["PLOT_CHR"]
+
+##############################################
+# Final outputs
+##############################################
 rule all:
     input:
-        "results/froh/merged_froh.tsv"
-        # Add plot rules if you want later
-
-
-# --------------------------------------------------------
-# 1. Convert each chromosome's filtered VCF ? PLINK files
-# --------------------------------------------------------
-rule vcf_to_plink:
-    input:
-        lambda wildcards: os.path.join(
-            config["data_path"], f"{wildcards.chrom}.filtered.vcf.gz"
-        )
-    output:
-        bed = "results/plink/{chrom}.bed",
-        bim = "results/plink/{chrom}.bim",
-        fam = "results/plink/{chrom}.fam"
-    threads: 4
-    shell:
-        """
-        plink \
-            --vcf {input} \
-            --make-bed \
-            --out results/plink/{wildcards.chrom} \
-            --allow-extra-chr \
-            --double-id
-        """
-
-
-# --------------------------------------
-# 2. Run PLINK ROH per chromosome
-# --------------------------------------
-rule run_roh:
-    input:
-        bed = "results/plink/{chrom}.bed",
-        bim = "results/plink/{chrom}.bim",
-        fam = "results/plink/{chrom}.fam"
-    output:
-        "results/roh/{chrom}.hom"
-    params:
-        min_kb      = config["roh_parameters"]["min_kb"],
-        window_snp  = config["roh_parameters"]["window_snp"],
-        window_het  = config["roh_parameters"]["window_het"],
-        window_miss = config["roh_parameters"]["window_missing"]
-    shell:
-        """
-        plink \
-            --bfile results/plink/{wildcards.chrom} \
-            --homozyg \
-            --homozyg-kb {params.min_kb} \
-            --homozyg-window-snp {params.window_snp} \
-            --homozyg-window-het {params.window_het} \
-            --homozyg-window-missing {params.window_miss} \
-            --allow-extra-chr \
-            --out results/roh/{wildcards.chrom}
-        """
-
-
-# ---------------------------------------------
-# 3. Compute FROH per chromosome using script
-# ---------------------------------------------
-rule compute_froh:
-    input:
-        hom = "results/roh/{chrom}.hom"
-    output:
-        "results/froh/{chrom}.froh.tsv"
-    params:
-        chrom_len = lambda wc: config["chrom_lengths"][wc.chrom]
-    shell:
-        """
-        bash scripts/compute_froh.sh {wildcards.chrom} {input.hom} {params.chrom_len} \
-            > {output}
-        """
-
-
-# ---------------------------------------------------
-# 4. Merge all FROH values into one genomewide file
-# ---------------------------------------------------
-rule merge_froh:
-    input:
-        expand("results/froh/{chrom}.froh.tsv", chrom=CHROMS)
-    output:
-        "results/froh/merged_froh.tsv"
-    shell:
-        """
-        cat {input} > {output}
-        """
+        "results/froh/merged_froh.tsv",
+        "results/plots/roh_manhattan_genomewide.png",
+        f"results/plots/roh_{PLOT_CHR}.png"
 

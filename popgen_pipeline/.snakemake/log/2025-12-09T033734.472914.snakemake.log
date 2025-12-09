@@ -1,0 +1,149 @@
+Assuming unrestricted shared filesystem usage.
+host: nata
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+froh                            8
+merge_froh                      1
+roh_manhattan_chr              10
+roh_manhattan_genomewide        1
+total                          21
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 4 jobs...
+[Tue Dec  9 03:37:34 2025]
+localrule roh_manhattan_chr:
+    input: results/roh/NC_058195.1.hom
+    output: results/plots/roh_NC_058195.1.png
+    jobid: 39
+    reason: Forced execution
+    wildcards: chrom=NC_058195.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 03:37:34 2025]
+localrule froh:
+    input: results/roh/NC_058193.1.hom
+    output: results/froh/NC_058193.1_froh.tsv
+    jobid: 15
+    reason: Missing output files: results/froh/NC_058193.1_froh.tsv; Updated input files: results/roh/NC_058193.1.hom
+    wildcards: chrom=NC_058193.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 03:37:34 2025]
+localrule roh_manhattan_chr:
+    input: results/roh/NC_058189.1.hom
+    output: results/plots/roh_NC_058189.1.png
+    jobid: 33
+    reason: Forced execution
+    wildcards: chrom=NC_058189.1
+    resources: tmpdir=/tmp
+[Tue Dec  9 03:37:34 2025]
+localrule roh_manhattan_genomewide:
+    input: results/roh
+    output: results/plots/roh_manhattan_genomewide.png
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Tue Dec  9 03:37:34 2025]
+Finished jobid: 15 (Rule: froh)
+1 of 21 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 03:37:34 2025]
+localrule roh_manhattan_chr:
+    input: results/roh/NC_058197.1.hom
+    output: results/plots/roh_NC_058197.1.png
+    jobid: 41
+    reason: Forced execution
+    wildcards: chrom=NC_058197.1
+    resources: tmpdir=/tmp
+RuleException:
+CalledProcessError in file "/home/exouser/Desktop/SM_PopGen/popgen_pipeline/rules/roh.smk", line 83:
+Command 'set -euo pipefail;  
+        Rscript scripts/roh_manhattan.R results/roh/NC_058195.1.hom results/plots/roh_NC_058195.1.png' returned non-zero exit status 1.
+[Tue Dec  9 03:37:35 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 39
+    input: results/roh/NC_058195.1.hom
+    output: results/plots/roh_NC_058195.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058195.1.hom results/plots/roh_NC_058195.1.png
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/home/exouser/Desktop/SM_PopGen/popgen_pipeline/rules/roh.smk", line 83:
+Command 'set -euo pipefail;  
+        Rscript scripts/roh_manhattan.R results/roh/NC_058197.1.hom results/plots/roh_NC_058197.1.png' returned non-zero exit status 1.
+[Tue Dec  9 03:37:35 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 41
+    input: results/roh/NC_058197.1.hom
+    output: results/plots/roh_NC_058197.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058197.1.hom results/plots/roh_NC_058197.1.png
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/home/exouser/Desktop/SM_PopGen/popgen_pipeline/rules/roh.smk", line 93:
+Command 'set -euo pipefail;  
+        Rscript scripts/roh_manhattan_genomewide.R results/roh results/plots/roh_manhattan_genomewide.png' returned non-zero exit status 1.
+[Tue Dec  9 03:37:35 2025]
+Error in rule roh_manhattan_genomewide:
+    message: None
+    jobid: 0
+    input: results/roh
+    output: results/plots/roh_manhattan_genomewide.png
+    shell:
+        
+        Rscript scripts/roh_manhattan_genomewide.R results/roh results/plots/roh_manhattan_genomewide.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 03:37:35 2025]
+Finished jobid: 33 (Rule: roh_manhattan_chr)
+2 of 21 steps (10%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Dec  9 03:37:35 2025]
+Error in rule roh_manhattan_genomewide:
+    message: None
+    jobid: 0
+    input: results/roh
+    output: results/plots/roh_manhattan_genomewide.png
+    shell:
+        
+        Rscript scripts/roh_manhattan_genomewide.R results/roh results/plots/roh_manhattan_genomewide.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 03:37:35 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 39
+    input: results/roh/NC_058195.1.hom
+    output: results/plots/roh_NC_058195.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058195.1.hom results/plots/roh_NC_058195.1.png
+        
+        (command exited with non-zero exit code)
+[Tue Dec  9 03:37:35 2025]
+Error in rule roh_manhattan_chr:
+    message: None
+    jobid: 41
+    input: results/roh/NC_058197.1.hom
+    output: results/plots/roh_NC_058197.1.png
+    shell:
+        
+        Rscript scripts/roh_manhattan.R results/roh/NC_058197.1.hom results/plots/roh_NC_058197.1.png
+        
+        (command exited with non-zero exit code)
+Complete log(s): /home/exouser/Desktop/SM_PopGen/popgen_pipeline/.snakemake/log/2025-12-09T033734.472914.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

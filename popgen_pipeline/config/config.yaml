@@ -1,5 +1,10 @@
+# Path to filtered VCF files
 data_path: "/home/exouser/Desktop/SM_PopGen_data/FILTERED_CHR_VCFS"
 
+# The chromosome you want to plot individually
+PLOT_CHR: "NC_058189.1"
+
+# All chromosomes used in the analysis
 chromosomes:
   - NC_058189.1
   - NC_058190.1
@@ -25,12 +30,8 @@ chrom_lengths:
   NC_058198.1: 24000787
 
 roh_parameters:
-  min_kb: 1000
-  window_snp: 500
-  window_het: 2 
+  min_kb: 500
+  window_snp: 50
+  window_het: 1
   window_missing: 2
 
-final_output:
- - results/froh/merged_froh.tsv
-
-   

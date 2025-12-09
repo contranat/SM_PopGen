@@ -1,8 +1,12 @@
-# Do NOT track large data files
+###############################################
+# IGNORE ALL RAW DATA & INTERMEDIATE FILES
+###############################################
+
+# Ignore full data directory (big files)
 data/**/*
 !data/README.md
 
-# Ignore VCF, BAM, FASTQ, etc.
+# Ignore typical genomics formats
 *.vcf
 *.vcf.gz
 *.vcf.gz.tbi
@@ -11,31 +15,30 @@ data/**/*
 *.fastq.gz
 *.zip
 
-# Ignore results
-results/
+###############################################
+# IGNORE RESULTS EXCEPT FINAL OUTPUTS
+###############################################
 
-# Ignore raw data
-popgen_pipeline/data/**/*
+# Ignore everything in results by default
+results/*
+results/**
 
-# Allow placeholder readme
-!popgen_pipeline/data/README.md
+# UN-IGNORE directories so children can be matched
+!results/
+!results/froh/
+!results/plots/
 
-# Ignore common genomic data formats
-*.vcf
-*.vcf.gz
-*.vcf.gz.tbi
-*.bam
-*.fastq
-*.fastq.gz
-*.zip
+# UN-IGNORE final output files only
+!results/froh/merged_froh.tsv
+!results/plots/*.png
 
-# Ignore intermediate ROH files
+###############################################
+# IGNORE INTERMEDIATE SNakEMAKE STUFF
+###############################################
+
 results/plink/**
 results/roh/**
 results/roh_per_chrom/**
 results/temp/**
 
-# Allow final processed outputs only
-!results/froh/merged_froh.tsv
-!results/plots/*.png
 
